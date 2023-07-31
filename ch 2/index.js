@@ -31,3 +31,28 @@
 // y=6;
 // console.log(x>y && x==5)
 // console.log(x>y || x==5)
+//Conditional Expressions
+//If condition,if else if
+let a = 50
+if(a>2){
+    console.log('This number is valid for all recordings')
+}
+else{
+    console.log('This is not valid for all recordings')
+}
+//switch statement
+let name = 'Ali';
+switch(name){
+    case 'Hasam':
+        console.log('The name is Hasam');
+        break;
+    case 'Hashim':
+        console.log('The name is Hashim');
+        break;
+    case 'Ali':
+        console.log('The name is Ali');
+        break;
+}
+console.log('done')
+//Ternary Operators
+console.log('the value of a is ',(a<18? 'not_acceptable':'acceptable'))
