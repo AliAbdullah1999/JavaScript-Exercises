@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators Tasks</title>
+</head>
+
+<body>
+    <script>
+        //Task 1
+        alert(null || 2 || undefined);
+        //Task 2
+        alert(alert(1) || 2 || alert(3));
+        //Task 3
+        alert(1 && null && 2);
+        //Task 4
+        alert(alert(1) && alert(2));
+        //Task 5
+        alert(null || 2 && 3 || 4);
+        //Task 6 + 7
+        let age = prompt('Enter your age please!');
+        if (age >= 14 && age <= 90) {
+            alert(`Your age is: ${age}`)
+        } else {
+            alert('The age is not in the given range')
+        }
+        //Task 8
+        if (-1 || 0) alert('first');
+        if (-1 && 0) alert('second');
+        if (null || -1 && 1) alert('third');
+        //Task 9
+        let UserName =prompt('Enter your username please!');
+        if (UserName == 'Admin'){
+            let key =prompt('Enter your key please');
+            if (key =='TheMaster'){
+                alert('Welcome!')
+            }else if(key == '' || key === null){
+               alert('Canceled') 
+            }else{
+                alert('Wrong Password')
+            }
+
+            }else if(UserName === '' || UserName === null){
+                alert('Canceled')
+            }else{
+                alert('I donot Know')
+            }
+        
+    </script>
+</body>
+
+</html>
