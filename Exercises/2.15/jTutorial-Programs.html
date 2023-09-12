@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      let username1 = "Ali";
+      function showMessage() {
+        alert(username1);
+        username2 = "Hashim";
+        let message = "Hello" + username1;
+        alert(message);
+      }
+
+      showMessage();
+      alert(username2);
+      function showMessage(from, text) {
+        alert(from + "" + text);
+      }
+      showMessage("Ali! ");
+      showMessage("Raheel", "This is the country/homeland");
+      // function TextOnly(text) {
+      //   if (text === undefined) {
+      //     text = "No text available/given in the parameter";
+      //   }
+      //   alert(text);
+      // }
+      // TextOnly(undefined);
+      // function showCount(count) {
+      //   alert(count ?? "unknown");
+      // }
+      // showCount(0);
+      // showCount(null);
+      // showCount();
+      // function sum(a, b) {
+      //   return a + b;
+      // }
+      // let result = sum(1, 2);
+      // alert(result);
+      // //Names of the functions are usually verbs and it should be as accurate as possible
+      // function checkage(age) {
+      //   if (age === 18) {
+      //     return True;
+      //   } else {
+      //     return confirm("Do you have permission from your parents");
+      //   }
+      // }
+      // let age = prompt("How old are you?", 18);
+      // if (checkage(age)) {
+      //   alert("Access Granted");
+      // } else {
+      //   alert("Access Denied");
+      // }
+      //Tasks start here
+      // let age = prompt("Enter your age plz");
+      // function checkAge(age) {
+      //   if (age > 18) {
+      //     return True;
+      //   } else {
+      //     return confirm("Did you ask for your parents permission");
+      //   }
+      // Task#3 browser version
+      // let a = prompt("Enter the first number");
+      // let b = prompt("Enter the second number");
+      // function min(a, b) {
+      //   if (a > b) {
+      //     return b;
+      //   } else {
+      //     return a;
+      //   }
+      // }
+      // alert(min());
+      // }
+    </script>
+  </body>
+</html>
