@@ -7,20 +7,55 @@
   </head>
   <body>
     <script>
-      function ask(question, yes, no) {
-        if (confirm(question)) yes();
-        else no();
-      }
+      //   function ask(question, yes, no) {
+      //     if (confirm(question)) yes();
+      //     else no();
+      //   }
 
-      ask(
-        "Do you agree?",
-        () => {
-          alert("You agreed.");
+      //   ask(
+      //     "Do you agree?",
+      //     () => {
+      //       alert("You agreed.");
+      //     },
+      //     () => {
+      //       alert("You canceled the execution.");
+      //     }
+      //   );
+      //   const fn1 = () => console.log(this);
+      //   fn1();
+      //   function fn2() {
+      //     console.log(this);
+      //   }
+      //   fn2();
+      //   function multiply(num1, num2) {
+      //     const result = num1 * num2;
+      //     return result;
+      //   }
+      //   multiply(2, 5);
+      //   const multiply1 = (num1, num2) => {
+      //     const result = num1 * num2;
+      //     return result;
+      //   };
+      //   multiply1(5, 2);
+      //   const multiply = (num1, num2) => num1 * num2;
+      //   multiply(2, 5);
+      const myobject = {
+        name: "deeecode",
+        age: 200,
+        print: function () {
+          console.log(this);
+          function print2() {
+            // const _this = myobject;
+            console.log(this);
+          }
+
+          print2();
         },
-        () => {
-          alert("You canceled the execution.");
-        }
-      );
+      };
+
+      myobject.print();
+
+      console.log("This shows the attributes of object ${this} ", this);
     </script>
   </body>
 </html>
