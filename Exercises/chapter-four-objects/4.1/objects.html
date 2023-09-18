@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      let user = {
+        name: "Ali",
+        age: 35,
+      };
+      //   alert(user.name);
+      //   user.hislikes = "Cars";
+      //   //   alert(user.age);
+      //   delete user.age;
+      //   alert(user.age);
+      //an object property has no restrictions of reserved words,they can be used as property names
+      //   function makeUser(name, age) {
+      //     return {
+      //       name,
+      //       age,
+      //     };
+      //   }
+      //   const user = makeUser(
+      //     prompt("enter your name plz"),
+      //     prompt("enter your age plz")
+      //   );
+      //   alert(user.name);
+      //   if (user.age > 18) {
+      //     alert(
+      //       "congratulations you are eligible to apply for your driving lisence"
+      //     );
+      //   } else {
+      //     alert("you can come back after you turn 18");
+      //   }
+      //   user["i like cars"] = true;
+      //   prompt("do you like cars");
+      for (let key in user) {
+        alert(key);
+        alert(user[key]);
+      }
+    </script>
+  </body>
+</html>
