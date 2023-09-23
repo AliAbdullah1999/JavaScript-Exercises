@@ -7,12 +7,74 @@
   </head>
   <body>
     <script>
-      const user = {
-        name: "ali",
+      // const user = {
+      //   name: "ali",
+      // };
+      // admin = user;
+      // admin.name = "asad";
+      // alert(admin.name);
+      // const user = {};
+      // user.name = prompt("Enter your name");
+      // user.age = prompt("Enter your age");
+      // user.city = prompt("Enter the name of the city you live in.");
+      // user.country = prompt("Enter the name of country you live in.");
+      // const hobbies = ["cycling", "running", "exercises"];
+      // Object.assign(user, hobbies);
+      // clone = {};
+      // for (let prop in user) {
+      //   clone[prop] = user[prop];
+      // }
+      // // for (let prop in user) {
+      // //   alert(user[prop]);
+      // // }
+      // //modifying clone objects and seeing results
+      // // const hobbies = prompt("Enter your hobbies plz");
+      // // Object.assign(user, hobbies);
+      // for (let prop in clone) {
+      //   alert(clone[prop]);
+      // }
+      //Nested Cloning
+      // const nestedObject = {
+      //   name: "ali",
+      //   age: 23,
+      //   hobbies: {
+      //     hobby1: "hobby1",
+      //     hobby2: "hobby2",
+      //   },
+      // };
+      // // for (let prop in nestedObject) {
+      // //   alert(nestedObject[prop]);
+      // // }
+      // alert(nestedObject.hobbies.hobby1);
+      // alert(nestedObject.hobbies.hobby2);
+      // // const clone = object.assign({}, nestedObject);
+      // const clone = structuredClone(nestedObject);
+      // // alert(nestedObject.hobbies === clone.hobbies);
+      // // alert(clone.hobbies);
+      // nestedObject.hobbies.hobby1 = "This is not as it was earlier";
+      // // for (let prop in clone) {
+      // //   alert(clone);
+      // // }
+      // alert(clone.hobbies.hobby1);
+      //nested nested object
+      const doubleNested = {
+        name: "david",
+        age: 23,
+        address: {
+          city: "New York",
+          country: "USA",
+          contact: {
+            phoneNumber: +15523369,
+            poBox: 231557,
+          },
+        },
       };
-      admin = user;
-      admin.name = "asad";
-      alert(admin.name);
+      clone = structuredClone(doubleNested);
+      clone.address.contact.phoneNumber = +923333515910;
+      // alert(
+      //   doubleNested.address.contact.phoneNumber ===
+      //     clone.address.contact.phoneNumber
+      // );
     </script>
   </body>
 </html>

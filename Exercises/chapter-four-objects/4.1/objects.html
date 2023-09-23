@@ -7,10 +7,10 @@
   </head>
   <body>
     <script>
-      let user = {
-        name: "Ali",
-        age: 35,
-      };
+      // let user = {
+      //   name: "Ali",
+      //   age: 35,
+      // };
       //   alert(user.name);
       //   user.hislikes = "Cars";
       //   //   alert(user.age);
@@ -37,10 +37,68 @@
       //   }
       //   user["i like cars"] = true;
       //   prompt("do you like cars");
-      for (let key in user) {
-        alert(key);
-        alert(user[key]);
+      // for (let key in user) {
+      //   alert(key);
+      //   alert(user[key]);
+      // }
+      //naming convention in javascript
+      // let naming = {
+      //   0: "test",
+      // };
+      // alert(naming[0]);
+      // alert(naming["0"]);
+      //checking the existance of keys in object
+      // const family = {
+      //   head: father,
+      // };
+      // alert("age" in family);
+      //iterating and printing keys with their values
+      // const iterate = {
+      //   name: "Ali",
+      //   age: 28,
+      //   height: 5.3,
+      // };
+      // for (let key in iterate) {
+      //   alert(key);
+      //   // alert(iterate[key]);
+      // }
+      const info = {};
+      info.name = prompt("Enter your name");
+      info.age = prompt("Enter your age");
+      info.city = prompt("Enter the name of the city");
+      info.country = prompt("Enter the name of the country");
+      info.industry = prompt("Enter the industry you work in ");
+      if (info.industry == "information technology") {
+        alert("you work in the right industry");
+      } else {
+        alert(
+          "you donot work in the bad industry but its not great as it should be"
+        );
       }
+      info.countryCode = prompt("Enter your country code please ");
+      if (info.countryCode == +92) {
+        alert("This number is a Pakistani number");
+      } else if (info.countryCode == +91) {
+        alert("This is an indian number");
+      } else if (info.countryCode == +880) {
+        alert("Its a bangladeshi number");
+      } else {
+        alert(
+          "your phone code does not match any of the available country codes"
+        );
+      }
+      // alert(info.countryCode + info.countryCode);
+      for (let prop in info) {
+        alert(info[prop]);
+      }
+      //Cloning
+      // let clone = {};
+      // for (let prop in info) {
+      //   clone[key] = info[key];
+      // }
+      // for (let prop in clone) {
+      //   alert(clone[prop]);
+      // }
     </script>
   </body>
 </html>
