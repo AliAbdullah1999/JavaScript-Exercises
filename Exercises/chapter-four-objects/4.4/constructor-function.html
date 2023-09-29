@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>constructor-function</title>
+  </head>
+  <body>
+    <script>
+      //   function Student(name) {
+      //     this.name = name;
+      //     this.present = false;
+      //   }
+      //   const student1 = new Student("Dawood");
+      //   alert(student1.name);
+      //   alert(student1.present);
+      //return in constructor
+      //   function returnSmaller() {
+      //     this.name = "Ali";
+      //     return { name: "asad" };
+      //   }
+      //   alert(new returnSmaller().name);
+      //empty return
+      //   function returnSmaller() {
+      //     this.name = "Ali";
+      //     return;
+      //   }
+      //   alert(new returnSmaller().name);
+      //methods in constructor
+      function PrintingSomething(sentense) {
+        this.sentense = sentense;
+        this.saySomething = function () {
+          alert("You wrote" + this.sentense);
+        };
+      }
+      const sentense1 = new PrintingSomething(
+        "This is the best thing to learn something and practise to make it better,Reason:Practise makes a man perfect"
+      );
+      sentense1.saySomething();
+    </script>
+  </body>
+</html>

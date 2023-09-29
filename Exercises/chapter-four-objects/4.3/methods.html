@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods in Objects</title>
+  </head>
+  <body>
+    <script>
+      //   let user = {};
+
+      //   function sayHi() {
+      //     alert("Hello Mr ${name}");
+      //   }
+
+      //   user.sayHi = sayHi;
+      //   user.sayHi();
+      //using this in the simplest form and in the above form
+      //   const user = {
+      //     name: "Ali",
+      //     age: 24,
+
+      //     sayHi() {
+      //       alert(this.name);
+      //     },
+      //   };
+      //   user.sayHi();
+      //calling this from multiple objects(because this is  free in javascript)
+      //   let user = { name: "John" };
+      //   let admin = { name: "Admin" };
+
+      //   function sayHi() {
+      //     alert(this.name);
+      //   }
+
+      //   user.f = sayHi;
+      //   admin.f = sayHi;
+
+      //   user.f();
+      //   admin.f();
+
+      //   admin["f"]();
+      //calling this in an arrow function
+      const family = {
+        father: "name",
+        mother: "name2",
+        sayHi() {
+          const arrow = () => alert(this.mother);
+          arrow();
+        },
+      };
+      family.sayHi();
+    </script>
+  </body>
+</html>
